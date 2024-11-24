@@ -1,0 +1,85 @@
+.heroBanner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.column {
+  width: 50%;
+}
+
+.heading {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading span {
+  color: rgb(225, 150, 96);
+}
+
+.description {
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+
+.subHeading {
+  margin: 0;
+  color: rgb(28, 135, 189);
+}
+
+.tagPoints {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+}
+
+.conversionButton {
+  width: fit-content;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .heroBanner {
+    gap: 10px;
+  }
+
+  .heading {
+    font-size: x-large;
+  }
+
+  .description {
+    font-size: 8px;
+  }
+}

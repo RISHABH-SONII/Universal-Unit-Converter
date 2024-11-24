@@ -1,0 +1,94 @@
+.container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5%;
+  gap: 2%;
+}
+.heading {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.column {
+  width: 20%;
+}
+
+.accordionPanel {
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 250px;
+  border: 1px solid transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .row {
+    gap: 20px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .heading {
+    font-size: x-large;
+  }
+  .card {
+    min-width: 90px;
+  }
+}

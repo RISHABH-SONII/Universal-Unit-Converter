@@ -1,0 +1,196 @@
+.heroSection {
+  max-width: 1500px;
+  width: 90%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  grid-template-columns: calc(55% - 16px) calc(45% - 16px);
+  color: black;
+  margin: auto;
+  margin: 1.25rem auto 2rem;
+  gap: 2rem;
+  overflow: hidden;
+  padding: 1.5rem 0px;
+  min-height: 80vh;
+}
+
+.leftSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: flex-start;
+  padding: 0rem 0.25rem;
+}
+.Groups {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+.cardUnactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: 1px solid transparent;
+  background-color: white;
+  max-width: 148px;
+  width: 148px;
+}
+.cardActive {
+  border: 1px solid navy;
+}
+.rightSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100%;
+}
+.selector {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-color: black;
+}
+.selectwrapper {
+  width: 100%;
+}
+.input {
+  width: 100%;
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  &::placeholder {
+    color: rgb(95, 110, 101);
+  }
+}
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.rightSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0rem 0rem;
+}
+.pageTitle {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+.TopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  gap: 16px;
+  margin: 2rem 0rem;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-height: 100%;
+  width: 100%;
+}
+.cardsContainer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.exchangeImageContainer {
+  cursor: pointer;
+}
+.result {
+  background-color: white;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resultHeading {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.resultvalue {
+  font-size: 18px;
+  font-weight: 400;
+  word-wrap: anywhere;
+}
+
+@media screen and (max-width: 800px) {
+  .heroSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+    min-height: 100%;
+  }
+  .leftSection {
+    order: 2;
+  }
+  .rightSection {
+    order: 1;
+  }
+  .rightSectionContainer {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .TopSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .exchangeImageContainer {
+    margin-top: 20px;
+  }
+  .cardUnactive {
+    width: calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+}
+@media screen and (max-width: 370px) {
+  .cardUnactive {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+.privacyPolicy {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0rem 4rem;
+}
+
+.heading {
+  font-weight: 500;
+}
+
+.date {
+  font-size: 20px;
+}
+
+.date span {
+  font-weight: 550;
+}
+.description {
+  margin: auto;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.listHeading {
+  font-size: 22px;
+  font-weight: 550;
+  color: black;
+}
+.listDescription {
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .date {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+  .listHeading {
+    font-size: 18px;
+  }
+  .listDescription {
+    font-size: 16px;
+  }
+}
